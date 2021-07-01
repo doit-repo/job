@@ -4,10 +4,10 @@
 #setting
 today=`date +%Y%m%d`
 dump_time=`date +%Y%m%d-%H`
-backup_dir=/backup/gif_db_backup
+backup_dir=/backup/???
 socket=/tmp/mysql.sock
 #remote_path=??
-logfile=/home/kthkdh13/log/dbdump/dump_$today.log
+logfile=/home/??/log/dbdump/dump_$today.log
 
 #database
 database="??"
@@ -39,5 +39,5 @@ echo "[$dump_time] : $database dump & copy finished.." >> $logfile
 echo " " >> $logfile
 
 # old log delete
-find /home/kthkdh13/log/dbdump/*.log -type f -mtime +6 -exec rm -f {} \;
+find /home/???/log/dbdump/*.log -type f -mtime +6 -exec rm -f {} \;
 find ${backup_dir}/ -type d -mtime +6 -exec rm -rf {} \;
